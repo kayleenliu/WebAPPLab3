@@ -9,12 +9,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>View Note</title>
     </head>
     <body>
-        <h1>View Note</h1>
-        <p>Title: ${note.title}</p>
-        <p>Contents: ${note.contents}</p>
-        <a href="note?edit=true">Edit Note</a>
+        <h1>Simple Note Keeper</h1>
+        <h2>View Note</h2>
+        <p><b>Title: </b>${note.title}</p>
+        <p><b>Contents: </b><br>${note.contents}</p>
+        <a href="note?edit=true">Edit</a>
     </body>
 </html>
