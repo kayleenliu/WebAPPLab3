@@ -19,7 +19,7 @@
             <input type="text" name="title" id="title" value="${note.title}">
             <br>
             <label for="contents"><b>Contents:</b></label>
-            <textarea name="contents" id="contents" rows="4" cols="20" value="${note.contents}"></textarea>
+            <textarea name="contents" id="contents" rows="4" cols="20">${note.contents}</textarea>
             <br>
             <button type="submit">Save</button>
         </form>

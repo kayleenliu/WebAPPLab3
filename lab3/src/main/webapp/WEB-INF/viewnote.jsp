@@ -1,7 +1,7 @@
 <%-- 
     Document   : viewnote
     Created on : Jan 30, 2022, 8:36:04 PM
-    Author     : Kayleen
+    Author     : Gao Liu
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

@@ -39,9 +39,7 @@ public class NoteServlet extends HttpServlet {
         
         String query = request.getQueryString();
         
-        if(query!=null && query.contains("edit")){
-             getServletContext().getRequestDispatcher("/WEB-INF/editnote.jsp").forward(request, response);
-        }else {
+        
         String path = getServletContext().getRealPath("/WEB-INF/note.txt");
         BufferedReader br = new BufferedReader(new FileReader(new File(path)));
         
@@ -50,7 +48,11 @@ public class NoteServlet extends HttpServlet {
         
         Note note = new Note(title, contents); 
         request.setAttribute("note", note);
-        getServletContext().getRequestDispatcher("/WEB-INF/viewnote.jsp").forward(request, response); 
+        
+        if(query!=null && query.contains("edit")){
+            getServletContext().getRequestDispatcher("/WEB-INF/editnote.jsp").forward(request, response);
+        }else {
+            getServletContext().getRequestDispatcher("/WEB-INF/viewnote.jsp").forward(request, response); 
         }
         
         
