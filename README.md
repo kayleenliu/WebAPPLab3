@@ -1,5 +1,5 @@
 <h1>Simple Note Keeper</h1> <br>
-<h2>author: Gao Liu </h2>
+<h2>Author: Gao Liu </h2>
 <br>
 This web app let user edit the title and contents of a note, and save it in txt file. Once it is saved, the web page will render view note and show new title and contents.
 <br>
